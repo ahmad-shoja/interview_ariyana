@@ -4,6 +4,7 @@ import SimpleIconButton from "@/components/ui/button/simple-icon-button";
 import TwoTunedButton from "@/components/ui/button/two-tuned-button";
 import AddIcon from "@mui/icons-material/Add";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
+import Chip from "@/components/ui/chip";
 
 export default function Home() {
   return (
@@ -15,6 +16,8 @@ export default function Home() {
       <SimpleIconButton>
         <MoreVertIcon />
       </SimpleIconButton>
+
+      <Chip label="سلام" />
 
       <p>سلام</p>
     </main>
