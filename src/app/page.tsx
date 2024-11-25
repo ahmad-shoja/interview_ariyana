@@ -1,9 +1,22 @@
-import Button from "@mui/material/Button";
+"use client";
+import SimpleButton from "@/components/ui/button/simple-button";
+import SimpleIconButton from "@/components/ui/button/simple-icon-button";
+import TwoTunedButton from "@/components/ui/button/two-tuned-button";
+import AddIcon from "@mui/icons-material/Add";
+import MoreVertIcon from "@mui/icons-material/MoreVert";
 
 export default function Home() {
   return (
     <main>
-      <Button variant="contained">Hello world</Button>
+      <SimpleButton>تسویه حساب</SimpleButton>
+      <TwoTunedButton>تسویه حساب</TwoTunedButton>
+      <TwoTunedButton endIcon={<AddIcon />}>تسویه حساب</TwoTunedButton>
+
+      <SimpleIconButton>
+        <MoreVertIcon />
+      </SimpleIconButton>
+
+      <p>سلام</p>
     </main>
   );
 }
