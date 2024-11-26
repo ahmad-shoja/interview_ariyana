@@ -11,6 +11,13 @@ const theme = createTheme({
   direction: "rtl",
 
   components: {
+    MuiBreadcrumbs: {
+      styleOverrides: {
+        separator: {
+          margin: 0.5,
+        },
+      },
+    },
     MuiButton: {
       styleOverrides: {
         root: {

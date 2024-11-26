@@ -11,7 +11,8 @@ export const customColors = {
     },
     text: {
         secondary: "rgba(116, 125, 139, 1)",
-        primary: "rgba(0, 0, 0, 0.2)"
+        primary: "rgba(0, 0, 0, 0.2)",
+        tertiary: "rgba(161, 172, 191, 1)"
     },
     primary: {
         500: "rgba(0, 119, 182, 1)",

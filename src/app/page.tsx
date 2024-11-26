@@ -1,25 +1,42 @@
 "use client";
 
-import {
-  SimpleButton,
-  SimpleIconButton,
-  TwoTunedButton,
-} from "@/components/ui/button";
-import SettingsIcon from "@mui/icons-material/Settings";
-import Chip from "@/components/ui/chip";
 import AppBar from "@/components/app-bar";
+import Breadcrumbs from "@/components/ui/breadcrumbs";
+import { SimpleButton, SimpleIconButton } from "@/components/ui/button";
+import Select from "@/components/ui/select";
+import { getBreadcrumbSegments } from "@/data";
+import { MoreVertRounded } from "@mui/icons-material";
+import { Box, Stack } from "@mui/material";
 export default function Home() {
+  const pageHeaderMarkup = (
+    <Stack direction={"row"} justifyContent={"space-between"}>
+      <Stack direction={"row"} gap={1} sx={{ flexGrow: 1 }}>
+        <Breadcrumbs segments={getBreadcrumbSegments()} />
+        <Select
+          options={[
+            { value: "value_1", label: "Label_1" },
+            { value: "value_2", label: "Label_2" },
+          ]}
+          label="اطلاعات حساب مرتضی فیاض"
+        />
+      </Stack>
+
+      <Stack direction={"row"} gap={1}>
+        <SimpleIconButton>
+          <MoreVertRounded />
+        </SimpleIconButton>
+        <SimpleButton>سقف اعتبار</SimpleButton>
+        <SimpleButton>تسویه حساب</SimpleButton>
+      </Stack>
+    </Stack>
+  );
+
   return (
     <main>
-      <AppBar/>
-      <div style={{ display: "flex", gap: "3px", padding: "16px" }}>
-        <SimpleButton>دکمه معمولی</SimpleButton>
-        <SimpleIconButton>
-          <SettingsIcon />
-        </SimpleIconButton>
-        <TwoTunedButton>دکمه 2 رنگ</TwoTunedButton>
-        <Chip label="گزینه 1" />
-      </div>
+      <AppBar />
+      <Box display="flex" flexDirection={"column"} m={3}>
+        {pageHeaderMarkup}
+      </Box>
     </main>
   );
 }
