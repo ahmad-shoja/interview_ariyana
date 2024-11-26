@@ -1,5 +1,6 @@
 "use client";
 
+import { customColors } from "@/utils/custom-colors";
 import {
   createTheme,
   ThemeProvider as MUIThemeProvider,
@@ -7,6 +8,25 @@ import {
 import { ReactNode } from "react";
 
 const theme = createTheme({
+  direction: "rtl",
+
+  components: {
+    MuiIconButton: {
+      styleOverrides: {
+        root: {
+          padding: 0,
+        },
+      },
+    },
+    MuiAppBar: {
+      styleOverrides: {
+        root: {
+          backgroundColor: customColors.gray[0],
+          color: customColors.gray[400],
+        },
+      },
+    },
+  },
   shape: {
     borderRadius: 4,
   },

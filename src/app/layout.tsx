@@ -2,6 +2,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import ThemeProvider from "./theme-provider";
+import Rtl from "@/cache-provider";
 
 const yekanBakh = localFont({
   src: [
@@ -47,9 +48,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" dir="rtl">
       <body className={`${yekanBakh.className}`}>
-        <ThemeProvider>{children}</ThemeProvider>
+        <Rtl>
+          <ThemeProvider>{children}</ThemeProvider>
+        </Rtl>
       </body>
     </html>
   );

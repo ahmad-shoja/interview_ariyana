@@ -1,0 +1,10 @@
+body {
+  background-color: rgba(249, 250, 251, 1);
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+:root{
+  font-size: 16px;
+}
