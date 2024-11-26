@@ -37,7 +37,7 @@ const SearchIconWrapper = styled("div")(({ theme }) => ({
 export default function AppBar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <MuiAppBar position="static">
+      <MuiAppBar position="static" elevation={1} >
         <Toolbar>
           <Search>
             <SearchIconWrapper>

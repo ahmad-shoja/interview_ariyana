@@ -6,7 +6,7 @@ import { SimpleButton, SimpleIconButton } from "@/components/ui/button";
 import Select from "@/components/ui/select";
 import { getBreadcrumbSegments } from "@/data";
 import { MoreVertRounded } from "@mui/icons-material";
-import { Box, Stack } from "@mui/material";
+import { Box, Paper, Stack } from "@mui/material";
 export default function Home() {
   const pageHeaderMarkup = (
     <Stack direction={"row"} justifyContent={"space-between"}>
@@ -34,8 +34,16 @@ export default function Home() {
   return (
     <main>
       <AppBar />
-      <Box display="flex" flexDirection={"column"} m={3}>
+      <Box display="flex" flexDirection={"column"} m={3} gap={2}>
         {pageHeaderMarkup}
+        <Paper elevation={2}>
+          <h1>Hello</h1>
+          <h1>Hello</h1>
+          <h1>Hello</h1>
+          <h1>Hello</h1>
+          <h1>Hello</h1>
+          <h1>Hello</h1>
+        </Paper>
       </Box>
     </main>
   );
