@@ -44,6 +44,7 @@ export default function AppBar() {
               <SearchIcon />
             </SearchIconWrapper>
             <InputBase
+              sx={{ fontWeight: "900" }}
               placeholder="دسترسی سریع  به صفحات"
               inputProps={{ "aria-label": "search" }}
             />

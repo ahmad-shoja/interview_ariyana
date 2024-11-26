@@ -11,6 +11,13 @@ const theme = createTheme({
   direction: "rtl",
 
   components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          height: "2rem",
+        },
+      },
+    },
     MuiIconButton: {
       styleOverrides: {
         root: {

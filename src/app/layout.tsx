@@ -34,10 +34,6 @@ const yekanBakh = localFont({
       path: "./fonts/yekan/Yekan-Bakh-FaNum-07-Heavy.woff",
       weight: "700",
     },
-    {
-      path: "./fonts/yekan/Yekan-Bakh-FaNum-08-Fat.woff",
-      weight: "800",
-    },
   ],
   variable: "--font-yekan",
 });
